@@ -58,9 +58,10 @@ public class EmpWageBuilder {
 		EmpWageBuilder YMall = new EmpWageBuilder("YMall",10,20,100);
 		EmpWageBuilder LuluMall = new EmpWageBuilder("LuluMall",15,20,100);
 		
-		System.out.println(DayMart.CompanyEmpWage());
-		System.out.println(YMall.CompanyEmpWage());
-		System.out.println(LuluMall.CompanyEmpWage());
+		System.out.println("Total Monthly wages of "+DayMart.company+" is : Rs "+DayMart.CompanyEmpWage());
+		System.out.println("Total Monthly wages of "+YMall.company+" is : Rs "+YMall.CompanyEmpWage());
+		System.out.println("Total Monthly wages of "+LuluMall.company+" is : Rs "+LuluMall.CompanyEmpWage());
+
 
 
 	}
