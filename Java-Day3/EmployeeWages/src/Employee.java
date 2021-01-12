@@ -9,16 +9,6 @@ public class Employee {
 	private  int workingHours;
 	static double EmpWages;
 	
-	
-//	int HrWages=20;
-//	int workingHour=0;
-//	double EmpWages;
-//	double TotalWages=0;
-//	int WorkingDays=0;
-//	int TotalWorkingDays=20;
-//	int TotalWorkingHours=100;
-	
-	
 	public Employee(String string, int i, int j, int k) {
 		this.company=string;
 		this.hrWages=i;
