@@ -23,7 +23,7 @@ public class Regrex {
     } 
 	public static boolean isValidMail(String mail) 
     { 
-        String email = "^(?=.*[A-Z])(?=.*[0-9])[-_.#@/]{2}([a-z]?).{8,}$"; 
+        String email = "^(?=.*[A-Za-z])(?=.*[0-9])[-_.#@/]{2}([a-z]?).{8,}$"; 
         Pattern emil = Pattern.compile(email); 
         if (mail == null) { 
             return false; 
@@ -46,7 +46,7 @@ public class Regrex {
 	
 	public static boolean isValidPwd(String pass ) 
     { 
-        String password = "(?=.*[@#$%^&+=])"; 
+        String password = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"; 
         Pattern pwd = Pattern.compile(password); 
         if (pass ==null) { 
             return false; 
