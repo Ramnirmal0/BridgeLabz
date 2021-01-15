@@ -23,7 +23,7 @@ public class Regrex {
     } 
 	public static boolean isValidMail(String mail) 
     { 
-        String email = "^(?=.*[A-Za-z])(?=.*[0-9])[-_.#@/]{2}([a-z]?).{8,}$"; 
+        String email = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^-]+(?:\\.[a-zA-Z0-9_!#$%&'*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$"; 
         Pattern emil = Pattern.compile(email); 
         if (mail == null) { 
             return false; 
